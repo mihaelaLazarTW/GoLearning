@@ -15,3 +15,21 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+  Miha1:
+    runs-on: ubuntu-latest
+    needs: Explore-GitHub-Actions
+    steps:
+      - run: echo "Running step from Miha1 job"
+
+  Miha2:
+    runs-on: ubuntu-latest
+    needs: Explore-GitHub-Actions
+    steps:
+      - run: echo "Running step from Miha2 job"
+  
+  Miha21:
+    runs-on: ubuntu-latest
+    needs: Miha2
+    steps:
+      - run: echo "Running step from Miha21 job"
