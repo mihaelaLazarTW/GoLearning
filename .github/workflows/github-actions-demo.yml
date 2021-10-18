@@ -29,6 +29,7 @@ jobs:
       - run: echo "Running step from Miha2 job"
   
   Miha21:
+    environment: prod
     runs-on: ubuntu-latest
     needs: Miha2
     steps:
