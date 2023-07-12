@@ -1,5 +1,6 @@
 name: GitHub Actions Demo
 on: [push]
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -27,7 +28,7 @@ jobs:
     needs: Explore-GitHub-Actions
     steps:
       - run: echo "Running step from Miha2 job"
-  
+
   Miha21:
     environment: prod
     runs-on: ubuntu-latest
